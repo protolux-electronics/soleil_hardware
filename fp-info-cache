@@ -1,4 +1,4 @@
-23688473593610427
+23693646392488353
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -96309,6 +96309,27 @@ Varistor
 Varistor_Panasonic_VF
 Panasonic VF series varistor, 6x8mm body, 3.2mm height, https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf/AWA0000/AWA0000C4.pdf
 Varistor VF
+0
+2
+2
+gworkman_connector
+JST_PH_01x02_SMT_Horizontal
+JST PH series connector, S2B-PH-SM4-TB (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator
+connector JST PH horizontal
+0
+4
+3
+gworkman_connector
+RaspberryPi_low_profile_HAT_connector
+Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-120-02-xxx-DV-BE-A, 20 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
+connector Samtec HLE horizontal
+0
+40
+40
+gworkman_device
+L_Vishay_IHLP-2525
+Inductor, Vishay, IHLP series, 6.3mmx6.3mm
+inductor vishay ihlp smd
 0
 2
 2
