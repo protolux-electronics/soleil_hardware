@@ -1,4 +1,4 @@
-23693646392488353
+23697099394596429
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -96313,12 +96313,26 @@ Varistor VF
 2
 2
 gworkman_connector
+BeagleBoneBlack_2x23_SMD_connector
+surface-mounted straight pin header, 2x23, 2.54mm pitch, double rows
+Surface mounted pin header SMD 2x23 2.54mm double row
+0
+46
+46
+gworkman_connector
 JST_PH_01x02_SMT_Horizontal
 JST PH series connector, S2B-PH-SM4-TB (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator
 connector JST PH horizontal
 0
 4
 3
+gworkman_connector
+MPD_BatteryClip_CR2032
+CR2032 battery clip SMD
+CR2032 coin cell battery clip holder SMD
+0
+3
+2
 gworkman_connector
 RaspberryPi_low_profile_HAT_connector
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-120-02-xxx-DV-BE-A, 20 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
