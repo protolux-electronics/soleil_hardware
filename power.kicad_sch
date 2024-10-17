@@ -6495,7 +6495,7 @@
 		)
 		(uuid "954d7c1f-d675-4b3d-ab57-7ddf6b48827b")
 	)
-	(text "- Input current limit of 1A\n- Charge voltage 4.2V\n- Fast charge current 500mA\n"
+	(text "- Input current limit of 1A\n- Charge voltage 4.2V\n- Fast charge current 500mA\n- Battery-only mode 4uA Iq\n"
 		(exclude_from_sim no)
 		(at 187.96 21.59 0)
 		(effects
