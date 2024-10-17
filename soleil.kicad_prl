@@ -64,7 +64,7 @@
       39,
       40
     ],
-    "visible_layers": "000f0fc_ffffffff",
+    "visible_layers": "004f0fc_ffffffff",
     "zone_display_mode": 0
   },
   "git": {
@@ -74,7 +74,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "soleil_powerpack.kicad_prl",
+    "filename": "soleil.kicad_prl",
     "version": 3
   },
   "project": {
