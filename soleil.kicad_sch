@@ -3874,6 +3874,19 @@
 		)
 		(uuid "44406c01-4407-4435-a283-859d9eb87aa0")
 	)
+	(text "Power Management"
+		(exclude_from_sim no)
+		(at 95.25 144.78 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "4a2a2fa5-c24d-4a8f-91c9-1eb1652df3c2")
+	)
 	(text "- certificate storage for connection to NervesHub"
 		(exclude_from_sim no)
 		(at 180.34 119.38 0)
