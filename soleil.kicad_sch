@@ -4184,6 +4184,24 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey" "YAG5649CT-ND"
+			(at 129.54 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "AC0402FR-071M2L"
+			(at 129.54 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "750d5b86-e09d-4e81-9cfc-29edcfa3da93")
 		)
@@ -4359,6 +4377,24 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey" "2019-RK73B1ETTP512JCT-ND"
+			(at 129.54 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RK73B1ETTP512J"
+			(at 129.54 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "80af1a7f-c231-4e74-af1c-c14934c61e9a")
 		)
@@ -4503,6 +4539,24 @@
 				(hide yes)
 			)
 		)
+		(property "DigiKey" "YAG5649CT-ND"
+			(at 124.46 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "AC0402FR-071M2L"
+			(at 124.46 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c1ceaae0-17ad-48ac-9f0c-0cac51e73fe0")
 		)
@@ -4573,7 +4627,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C71629"
+			(at 201.93 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "490-6328-1-ND"
+			(at 201.93 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM155R71C104KA88J"
 			(at 201.93 43.18 0)
 			(effects
 				(font
@@ -5091,7 +5163,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C5340015"
+			(at 264.16 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "490-GCM1555C1H6R0DA16DCT-ND"
+			(at 264.16 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GCM1555C1H6R0DA16D"
 			(at 264.16 36.83 0)
 			(effects
 				(font
@@ -5432,7 +5522,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C5340015"
+			(at 264.16 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "490-GCM1555C1H6R0DA16DCT-ND"
+			(at 264.16 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GCM1555C1H6R0DA16D"
 			(at 264.16 49.53 0)
 			(effects
 				(font
@@ -5965,7 +6073,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C71629"
+			(at 199.39 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "490-6328-1-ND"
+			(at 199.39 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM155R71C104KA88J"
 			(at 199.39 139.7 0)
 			(effects
 				(font
@@ -6044,6 +6170,24 @@
 			)
 		)
 		(property "LCSC" ""
+			(at 124.46 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "2019-RK73B1ETTP512JCT-ND"
+			(at 124.46 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RK73B1ETTP512J"
 			(at 124.46 62.23 0)
 			(effects
 				(font
@@ -6674,7 +6818,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C71629"
+			(at 195.58 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "490-6328-1-ND"
+			(at 195.58 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM155R71C104KA88J"
 			(at 195.58 43.18 0)
 			(effects
 				(font
@@ -7436,7 +7598,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C71629"
+			(at 193.04 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "490-6328-1-ND"
+			(at 193.04 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM155R71C104KA88J"
 			(at 193.04 91.44 0)
 			(effects
 				(font
@@ -7800,7 +7980,7 @@
 			(uuid "1e133616-f7b0-4475-a823-a421a4d0fcdd")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "soleil"
 				(path "/b61fef50-4aa2-4780-a3e1-5f234c7c7f04"
 					(page "2")
 				)
