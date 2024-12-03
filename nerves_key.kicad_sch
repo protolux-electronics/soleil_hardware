@@ -1,0 +1,32 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "0f05a7be-74f6-48f7-b77e-65bf2247f6da")
+	(paper "A4")
+	(lib_symbols)
+	(text "NervesKey"
+		(exclude_from_sim no)
+		(at 123.19 74.93 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "099e4eb6-8c35-430c-bda9-c36d674eecc0")
+	)
+	(text "- certificate storage for connection to NervesHub"
+		(exclude_from_sim no)
+		(at 123.19 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "8f3ffd86-6de1-44ba-a894-5116ec5c7d1e")
+	)
+)
