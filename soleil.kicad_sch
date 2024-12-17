@@ -84,6 +84,16 @@
 	)
 	(polyline
 		(pts
+			(xy 41.91 147.32) (xy 146.05 147.32)
+		)
+		(stroke
+			(width 0.35)
+			(type dot)
+		)
+		(uuid "95d7e17b-8bac-4d92-92a2-733471731785")
+	)
+	(polyline
+		(pts
 			(xy 58.42 102.87) (xy 148.59 102.87)
 		)
 		(stroke
@@ -13075,6 +13085,20 @@
 		)
 		(uuid "723ba33c-b685-4637-a16f-89494763b642")
 	)
+	(text "11"
+		(exclude_from_sim no)
+		(at 152.4 146.05 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify right top)
+			(href "#11")
+		)
+		(uuid "780102db-5ae4-4a89-b1e9-a7404f244b86")
+	)
 	(text "8"
 		(exclude_from_sim no)
 		(at 152.4 127 0)
@@ -13116,6 +13140,20 @@
 			(href "#3")
 		)
 		(uuid "8c708612-7e7d-46fb-a487-1bd0e8b79826")
+	)
+	(text "Qwiic"
+		(exclude_from_sim no)
+		(at 27.94 146.05 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify left top)
+			(href "#11")
+		)
+		(uuid "aef4465b-73f3-4b9c-a9f1-f3c93bff8400")
 	)
 	(text "Raspberry Pi"
 		(exclude_from_sim no)
