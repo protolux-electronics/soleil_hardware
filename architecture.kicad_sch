@@ -11,6 +11,126 @@
 		(comment 4 "High level architecture of Soleil")
 	)
 	(lib_symbols
+		(symbol "power:+3V3"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+4V"
 			(power)
 			(pin_numbers hide)
@@ -373,6 +493,12 @@
 		)
 	)
 	(junction
+		(at 210.82 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "491c41e9-d506-4f29-9ed1-b7e396990863")
+	)
+	(junction
 		(at 148.59 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -420,7 +546,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 80.01) (xy 218.44 80.01)
+			(xy 204.47 80.01) (xy 210.82 80.01)
 		)
 		(stroke
 			(width 0)
@@ -530,6 +656,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 153.67) (xy 87.63 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48a36a9f-8e35-48a9-b912-cef654810736")
+	)
+	(wire
+		(pts
 			(xy 157.48 83.82) (xy 166.37 83.82)
 		)
 		(stroke
@@ -550,6 +686,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 157.48) (xy 87.63 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7387f59e-9197-4e91-8160-4a6696c42e82")
+	)
+	(wire
+		(pts
 			(xy 97.79 55.88) (xy 97.79 58.42)
 		)
 		(stroke
@@ -567,6 +713,16 @@
 			(type default)
 		)
 		(uuid "954bdf10-6b09-40ed-903a-72814800d6a2")
+	)
+	(wire
+		(pts
+			(xy 210.82 80.01) (xy 218.44 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9597b8f2-fa4c-48df-84b6-caf72a5cb8f5")
 	)
 	(wire
 		(pts
@@ -630,6 +786,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 147.32) (xy 82.55 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abe002e1-7647-4448-b581-607d6f525f8d")
+	)
+	(wire
+		(pts
 			(xy 97.79 58.42) (xy 101.6 58.42)
 		)
 		(stroke
@@ -690,6 +856,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 77.47) (xy 210.82 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddb9e7d2-53d9-48c5-8303-0bcb6a6ff056")
+	)
+	(wire
+		(pts
 			(xy 81.28 58.42) (xy 77.47 58.42)
 		)
 		(stroke
@@ -730,6 +906,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 147.32) (xy 82.55 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6e247ae-4423-46d8-9e9f-e8452aff6af1")
+	)
+	(wire
+		(pts
 			(xy 138.43 55.88) (xy 138.43 58.42)
 		)
 		(stroke
@@ -750,6 +936,17 @@
 		(uuid "43431af9-e86b-4d61-a6cf-4eb5645271cd")
 	)
 	(label "I2C_SCL"
+		(at 87.63 157.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8b17c971-33d5-4e9b-a00b-ac92c744c3a5")
+	)
+	(label "I2C_SCL"
 		(at 207.01 87.63 0)
 		(fields_autoplaced yes)
 		(effects
@@ -759,6 +956,17 @@
 			(justify left bottom)
 		)
 		(uuid "95251fe1-5bba-46ea-9db0-435b90b3ef3f")
+	)
+	(label "I2C_SDA"
+		(at 87.63 153.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "953b1bd4-b43b-4aec-9676-97da60e334bf")
 	)
 	(label "I2C_SCL"
 		(at 86.36 115.57 180)
@@ -975,6 +1183,72 @@
 			(project ""
 				(path "/b61fef50-4aa2-4780-a3e1-5f234c7c7f04/01535fcb-a594-44d1-bdf5-c92a7cebe564"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 210.82 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9bf81832-96cb-44a2-9ef1-fd2701c88410")
+		(property "Reference" "#PWR04"
+			(at 210.82 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 210.82 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 210.82 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "256c848f-a9fd-4ef8-9aef-4456ca02d082")
+		)
+		(instances
+			(project ""
+				(path "/b61fef50-4aa2-4780-a3e1-5f234c7c7f04/01535fcb-a594-44d1-bdf5-c92a7cebe564"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -1239,6 +1513,72 @@
 			(project ""
 				(path "/b61fef50-4aa2-4780-a3e1-5f234c7c7f04/01535fcb-a594-44d1-bdf5-c92a7cebe564"
 					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 82.55 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e29fe775-450f-4781-b1e5-bf8031101772")
+		(property "Reference" "#PWR08"
+			(at 82.55 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 82.55 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 82.55 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4521d1b-6b77-4615-b275-fa98e16212b3")
+		)
+		(instances
+			(project "soleil"
+				(path "/b61fef50-4aa2-4780-a3e1-5f234c7c7f04/01535fcb-a594-44d1-bdf5-c92a7cebe564"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -1692,6 +2032,74 @@
 			(project "soleil"
 				(path "/b61fef50-4aa2-4780-a3e1-5f234c7c7f04/01535fcb-a594-44d1-bdf5-c92a7cebe564"
 					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 49.53 140.97)
+		(size 27.94 22.86)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8a17c464-dfd6-4bcc-8891-b8f386c5e091")
+		(property "Sheetname" "Qwiic"
+			(at 49.53 140.2584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "qwiic.kicad_sch"
+			(at 49.53 164.4146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C_SDA" input
+			(at 77.47 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9f479442-648f-4aa5-92e2-f49bdbe5b67a")
+		)
+		(pin "3V3" input
+			(at 77.47 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "31234598-c333-4a4c-b6da-66f35b60c592")
+		)
+		(pin "I2C_SCL" input
+			(at 77.47 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "36440c3d-5c4d-4219-83a5-073f09ec7755")
+		)
+		(instances
+			(project "soleil"
+				(path "/b61fef50-4aa2-4780-a3e1-5f234c7c7f04/01535fcb-a594-44d1-bdf5-c92a7cebe564"
+					(page "11")
 				)
 			)
 		)
