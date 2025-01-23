@@ -1,3 +1,4 @@
 .DS_Store
 soleil-backups/
 outputs/renders/
+~*.lck
