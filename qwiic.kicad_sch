@@ -8,6 +8,7 @@
 		(title "${PROJECT_NAME}")
 		(date "2024-12-01")
 		(comment 1 "Designed by Gus Workman")
+		(comment 4 "Qwiic connector. Add your custom I2C sensors here!")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x04"

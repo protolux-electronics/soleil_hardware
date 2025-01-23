@@ -3,14 +3,14 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "8.0.4"
+      "Version": "8.0.6"
     },
-    "CreationDate": "2024-09-21T11:57:22+02:00"
+    "CreationDate": "2025-01-23T17:56:30+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "soleil_powerpack",
-      "GUID": "736f6c65-696c-45f7-906f-776572706163",
+      "Name": "soleil",
+      "GUID": "736f6c65-696c-42e6-9b69-6361645f7063",
       "Revision": "rev?"
     },
     "Size": {
@@ -36,64 +36,64 @@
       "PadToPad": 0.0,
       "PadToTrack": 0.0,
       "TrackToTrack": 0.15,
-      "MinLineWidth": 0.25,
+      "MinLineWidth": 0.3,
       "TrackToRegion": 0.15,
       "RegionToRegion": 0.15
     }
   ],
   "FilesAttributes": [
     {
-      "Path": "soleil_powerpack-F_Cu.gbr",
+      "Path": "soleil-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "soleil_powerpack-In1_Cu.gbr",
+      "Path": "soleil-In1_Cu.gbr",
       "FileFunction": "Copper,L2,Inr",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "soleil_powerpack-In2_Cu.gbr",
+      "Path": "soleil-In2_Cu.gbr",
       "FileFunction": "Copper,L3,Inr",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "soleil_powerpack-B_Cu.gbr",
+      "Path": "soleil-B_Cu.gbr",
       "FileFunction": "Copper,L4,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "soleil_powerpack-F_Paste.gbr",
+      "Path": "soleil-F_Paste.gbr",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "soleil_powerpack-B_Paste.gbr",
+      "Path": "soleil-B_Paste.gbr",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "soleil_powerpack-F_Silkscreen.gbr",
+      "Path": "soleil-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "soleil_powerpack-B_Silkscreen.gbr",
+      "Path": "soleil-B_Silkscreen.gbr",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "soleil_powerpack-F_Mask.gbr",
+      "Path": "soleil-F_Mask.gbr",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "soleil_powerpack-B_Mask.gbr",
+      "Path": "soleil-B_Mask.gbr",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "soleil_powerpack-Edge_Cuts.gbr",
+      "Path": "soleil-Edge_Cuts.gbr",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }

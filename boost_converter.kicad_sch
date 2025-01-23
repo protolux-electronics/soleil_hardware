@@ -8,6 +8,7 @@
 		(title "${PROJECT_NAME}")
 		(date "2024-12-01")
 		(comment 1 "Designed by Gus Workman")
+		(comment 4 "5V boost converter circuitry")
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"
