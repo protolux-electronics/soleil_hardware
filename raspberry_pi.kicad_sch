@@ -4593,7 +4593,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "HLE-120-02-F-DV-BE-A"
+		(property "MPN" "FH-00339"
 			(at 99.06 85.09 0)
 			(effects
 				(font
@@ -4602,7 +4602,16 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey" "612-HLE-120-02-F-DV-BE-A-ND"
+		(property "DigiKey" ""
+			(at 99.06 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Alternative" "HLE-120-02-F-DV-BE-A"
 			(at 99.06 85.09 0)
 			(effects
 				(font
