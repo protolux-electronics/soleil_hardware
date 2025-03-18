@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "b61fef50-4aa2-4780-a3e1-5f234c7c7f04")
 	(paper "A4")
 	(title_block
@@ -12,6 +12,380 @@
 		(comment 4 "A power management system for Nerves, featuring low-power sleep mode, USB and solar")
 	)
 	(lib_symbols)
+	(text "4"
+		(exclude_from_sim no)
+		(at 152.4 101.6 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify right top)
+			(href "#4")
+		)
+		(uuid "01413905-f60e-4493-b970-15484e7b9a6c")
+	)
+	(text "7"
+		(exclude_from_sim no)
+		(at 152.4 120.65 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify right top)
+			(href "#7")
+		)
+		(uuid "0246ce72-615b-4b83-9474-4a49f3afc9f9")
+	)
+	(text "Advanced power and sleep control board for Raspberry Pi"
+		(exclude_from_sim no)
+		(at 27.94 44.45 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+			)
+			(justify left top)
+		)
+		(uuid "06fadea1-6577-41b2-a276-e9423195829f")
+	)
+	(text "3"
+		(exclude_from_sim no)
+		(at 152.4 95.25 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify right top)
+			(href "#3")
+		)
+		(uuid "089792db-5642-4795-86a5-9ee13e563f7d")
+	)
+	(text "Block Diagram"
+		(exclude_from_sim no)
+		(at 27.94 88.9 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify left top)
+			(href "#2")
+		)
+		(uuid "0dadaefe-57ba-48d4-8888-2d30e611c3a4")
+	)
+	(text "Table of Contents"
+		(exclude_from_sim no)
+		(at 27.94 69.85 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.7)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "1c15d882-2675-458c-b422-8286b10b52e2")
+	)
+	(text "9"
+		(exclude_from_sim no)
+		(at 152.4 133.35 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify right top)
+			(href "#9")
+		)
+		(uuid "2d849ccc-82d2-44f9-9bbe-735c44022360")
+	)
+	(text "5\n"
+		(exclude_from_sim no)
+		(at 152.4 107.95 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify right top)
+			(href "#5")
+		)
+		(uuid "2da1998a-a3b8-4f3f-adac-72ab9fba9a78")
+	)
+	(text "Boost Converter"
+		(exclude_from_sim no)
+		(at 27.94 127 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify left top)
+			(href "#8")
+		)
+		(uuid "2e93c93e-a5c1-4c2a-8d8c-0225f3d50c4c")
+	)
+	(text "Overview"
+		(exclude_from_sim no)
+		(at 27.94 82.55 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify left top)
+			(href "#1")
+		)
+		(uuid "440c6650-36f4-4765-9946-9481196f131b")
+	)
+	(text "1\n"
+		(exclude_from_sim no)
+		(at 152.4 82.55 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify right top)
+			(href "#1")
+		)
+		(uuid "499a575e-0ffc-48c4-bfc6-966a67ae1775")
+	)
+	(text "DC Input"
+		(exclude_from_sim no)
+		(at 27.94 107.95 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify left top)
+			(href "#5")
+		)
+		(uuid "49ea68f6-a76d-467b-b4ed-9e79ff149e91")
+	)
+	(text "Version v${VERSION}"
+		(exclude_from_sim no)
+		(at 266.7 43.18 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.625)
+			)
+			(justify right top)
+		)
+		(uuid "4e9dc61e-c4a3-4462-99fb-59b05243ae80")
+	)
+	(text "Wakeup Sources"
+		(exclude_from_sim no)
+		(at 27.94 133.35 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify left top)
+			(href "#9")
+		)
+		(uuid "4f85ab8d-8b06-4144-9ed9-653bcd991ffc")
+	)
+	(text "Battery Charger"
+		(exclude_from_sim no)
+		(at 27.94 114.3 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify left top)
+			(href "#6")
+		)
+		(uuid "52785ffd-c349-47f1-886c-e430d66c98a2")
+	)
+	(text "2"
+		(exclude_from_sim no)
+		(at 152.4 88.9 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify right top)
+			(href "#2")
+		)
+		(uuid "6651fb28-21a6-4648-846e-2d16e8bd219b")
+	)
+	(text "10"
+		(exclude_from_sim no)
+		(at 152.4 139.7 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify right top)
+			(href "#10")
+		)
+		(uuid "723ba33c-b685-4637-a16f-89494763b642")
+	)
+	(text "11"
+		(exclude_from_sim no)
+		(at 152.4 146.05 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify right top)
+			(href "#11")
+		)
+		(uuid "780102db-5ae4-4a89-b1e9-a7404f244b86")
+	)
+	(text "8"
+		(exclude_from_sim no)
+		(at 152.4 127 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify right top)
+			(href "#8")
+		)
+		(uuid "7fa2a3f6-33b8-4780-b127-67e0ac6887c6")
+	)
+	(text "Dec. 1 2024"
+		(exclude_from_sim no)
+		(at 266.7 35.56 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 1)
+				(bold yes)
+			)
+			(justify right top)
+		)
+		(uuid "8633604e-10af-4637-bb12-016b1b5575df")
+	)
+	(text "Architecture"
+		(exclude_from_sim no)
+		(at 27.94 95.25 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify left top)
+			(href "#3")
+		)
+		(uuid "8c708612-7e7d-46fb-a487-1bd0e8b79826")
+	)
+	(text "Qwiic"
+		(exclude_from_sim no)
+		(at 27.94 146.05 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify left top)
+			(href "#11")
+		)
+		(uuid "aef4465b-73f3-4b9c-a9f1-f3c93bff8400")
+	)
+	(text "Raspberry Pi"
+		(exclude_from_sim no)
+		(at 27.94 139.7 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify left top)
+			(href "#10")
+		)
+		(uuid "d0d1da4e-9b04-4ad9-b2a9-89506d313905")
+	)
+	(text "6"
+		(exclude_from_sim no)
+		(at 152.4 114.3 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify right top)
+			(href "#6")
+		)
+		(uuid "dc6c484c-3c92-4307-8208-6acc6f6c4367")
+	)
+	(text "Load Switch"
+		(exclude_from_sim no)
+		(at 27.94 120.65 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify left top)
+			(href "#7")
+		)
+		(uuid "e56167a1-7468-482b-8574-e5a2877912f4")
+	)
+	(text "Battery Input"
+		(exclude_from_sim no)
+		(at 27.94 101.6 0)
+		(effects
+			(font
+				(face "Avenir Next")
+				(size 3.5 3.5)
+				(thickness 0.4375)
+			)
+			(justify left top)
+			(href "#4")
+		)
+		(uuid "e99d8021-15fb-409e-b78a-d905d0ccdadb")
+	)
+	(text "${PROJECT_NAME}"
+		(exclude_from_sim no)
+		(at 29.21 31.75 0)
+		(effects
+			(font
+				(face "New Amsterdam")
+				(size 10 10)
+				(thickness 0.625)
+			)
+			(justify left top)
+		)
+		(uuid "eb93eea2-1f8a-4f9e-ade3-b21113b72c58")
+	)
 	(polyline
 		(pts
 			(xy 57.15 96.52) (xy 148.59 96.52)
@@ -50789,386 +51163,52 @@
 			"3r5f2f2u3O7vW4++761vv+/IQtnieHz8dV89WV7v7lWfrPuFMvzuX5r8zr2ycsXJfsrzd8bGJ/2T"
 			"pz/46Y1rg9Yezd5r/9XRs7Nz9O7ivHa6d+n81wYd7g36oPcvXq++vWrD59OBP+r73yu393u/lux8"
 			"y+5c8/jGefObdv1d09GFe6cZnuyf8l//yNFkt96ujM72er8y3fjE23/tbn32/h+UApzrY7Y1CAAA"
-			"AABJRU5ErkJggg=="
+			"AABJRU5ErkJgggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAA=="
 		)
-	)
-	(text "4"
-		(exclude_from_sim no)
-		(at 152.4 101.6 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify right top)
-			(href "#4")
-		)
-		(uuid "01413905-f60e-4493-b970-15484e7b9a6c")
-	)
-	(text "7"
-		(exclude_from_sim no)
-		(at 152.4 120.65 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify right top)
-			(href "#7")
-		)
-		(uuid "0246ce72-615b-4b83-9474-4a49f3afc9f9")
-	)
-	(text "Advanced power and sleep control board for Raspberry Pi"
-		(exclude_from_sim no)
-		(at 27.94 44.45 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-			)
-			(justify left top)
-		)
-		(uuid "06fadea1-6577-41b2-a276-e9423195829f")
-	)
-	(text "3"
-		(exclude_from_sim no)
-		(at 152.4 95.25 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify right top)
-			(href "#3")
-		)
-		(uuid "089792db-5642-4795-86a5-9ee13e563f7d")
-	)
-	(text "Block Diagram"
-		(exclude_from_sim no)
-		(at 27.94 88.9 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify left top)
-			(href "#2")
-		)
-		(uuid "0dadaefe-57ba-48d4-8888-2d30e611c3a4")
-	)
-	(text "Table of Contents"
-		(exclude_from_sim no)
-		(at 27.94 69.85 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.7)
-				(bold yes)
-			)
-			(justify left top)
-		)
-		(uuid "1c15d882-2675-458c-b422-8286b10b52e2")
-	)
-	(text "9"
-		(exclude_from_sim no)
-		(at 152.4 133.35 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify right top)
-			(href "#9")
-		)
-		(uuid "2d849ccc-82d2-44f9-9bbe-735c44022360")
-	)
-	(text "5\n"
-		(exclude_from_sim no)
-		(at 152.4 107.95 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify right top)
-			(href "#5")
-		)
-		(uuid "2da1998a-a3b8-4f3f-adac-72ab9fba9a78")
-	)
-	(text "Boost Converter"
-		(exclude_from_sim no)
-		(at 27.94 127 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify left top)
-			(href "#8")
-		)
-		(uuid "2e93c93e-a5c1-4c2a-8d8c-0225f3d50c4c")
-	)
-	(text "Overview"
-		(exclude_from_sim no)
-		(at 27.94 82.55 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify left top)
-			(href "#1")
-		)
-		(uuid "440c6650-36f4-4765-9946-9481196f131b")
-	)
-	(text "1\n"
-		(exclude_from_sim no)
-		(at 152.4 82.55 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify right top)
-			(href "#1")
-		)
-		(uuid "499a575e-0ffc-48c4-bfc6-966a67ae1775")
-	)
-	(text "DC Input"
-		(exclude_from_sim no)
-		(at 27.94 107.95 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify left top)
-			(href "#5")
-		)
-		(uuid "49ea68f6-a76d-467b-b4ed-9e79ff149e91")
-	)
-	(text "Version v${VERSION}"
-		(exclude_from_sim no)
-		(at 266.7 43.18 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.625)
-			)
-			(justify right top)
-		)
-		(uuid "4e9dc61e-c4a3-4462-99fb-59b05243ae80")
-	)
-	(text "Wakeup Sources"
-		(exclude_from_sim no)
-		(at 27.94 133.35 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify left top)
-			(href "#9")
-		)
-		(uuid "4f85ab8d-8b06-4144-9ed9-653bcd991ffc")
-	)
-	(text "Battery Charger"
-		(exclude_from_sim no)
-		(at 27.94 114.3 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify left top)
-			(href "#6")
-		)
-		(uuid "52785ffd-c349-47f1-886c-e430d66c98a2")
-	)
-	(text "2"
-		(exclude_from_sim no)
-		(at 152.4 88.9 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify right top)
-			(href "#2")
-		)
-		(uuid "6651fb28-21a6-4648-846e-2d16e8bd219b")
-	)
-	(text "10"
-		(exclude_from_sim no)
-		(at 152.4 139.7 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify right top)
-			(href "#10")
-		)
-		(uuid "723ba33c-b685-4637-a16f-89494763b642")
-	)
-	(text "11"
-		(exclude_from_sim no)
-		(at 152.4 146.05 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify right top)
-			(href "#11")
-		)
-		(uuid "780102db-5ae4-4a89-b1e9-a7404f244b86")
-	)
-	(text "8"
-		(exclude_from_sim no)
-		(at 152.4 127 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify right top)
-			(href "#8")
-		)
-		(uuid "7fa2a3f6-33b8-4780-b127-67e0ac6887c6")
-	)
-	(text "Dec. 1 2024"
-		(exclude_from_sim no)
-		(at 266.7 35.56 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 1)
-				(bold yes)
-			)
-			(justify right top)
-		)
-		(uuid "8633604e-10af-4637-bb12-016b1b5575df")
-	)
-	(text "Architecture"
-		(exclude_from_sim no)
-		(at 27.94 95.25 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify left top)
-			(href "#3")
-		)
-		(uuid "8c708612-7e7d-46fb-a487-1bd0e8b79826")
-	)
-	(text "Qwiic"
-		(exclude_from_sim no)
-		(at 27.94 146.05 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify left top)
-			(href "#11")
-		)
-		(uuid "aef4465b-73f3-4b9c-a9f1-f3c93bff8400")
-	)
-	(text "Raspberry Pi"
-		(exclude_from_sim no)
-		(at 27.94 139.7 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify left top)
-			(href "#10")
-		)
-		(uuid "d0d1da4e-9b04-4ad9-b2a9-89506d313905")
-	)
-	(text "6"
-		(exclude_from_sim no)
-		(at 152.4 114.3 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify right top)
-			(href "#6")
-		)
-		(uuid "dc6c484c-3c92-4307-8208-6acc6f6c4367")
-	)
-	(text "Load Switch"
-		(exclude_from_sim no)
-		(at 27.94 120.65 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify left top)
-			(href "#7")
-		)
-		(uuid "e56167a1-7468-482b-8574-e5a2877912f4")
-	)
-	(text "Battery Input"
-		(exclude_from_sim no)
-		(at 27.94 101.6 0)
-		(effects
-			(font
-				(face "Avenir Next")
-				(size 3.5 3.5)
-				(thickness 0.4375)
-			)
-			(justify left top)
-			(href "#4")
-		)
-		(uuid "e99d8021-15fb-409e-b78a-d905d0ccdadb")
-	)
-	(text "${PROJECT_NAME}"
-		(exclude_from_sim no)
-		(at 29.21 31.75 0)
-		(effects
-			(font
-				(face "New Amsterdam")
-				(size 10 10)
-				(thickness 0.625)
-			)
-			(justify left top)
-		)
-		(uuid "eb93eea2-1f8a-4f9e-ade3-b21113b72c58")
 	)
 	(sheet
 		(at 199.39 219.71)
 		(size 19.05 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -51208,6 +51248,10 @@
 	(sheet
 		(at 176.53 219.71)
 		(size 19.05 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -51248,4 +51292,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

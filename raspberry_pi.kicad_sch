@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "1cd0aebc-8f41-481e-a7d6-29a3ce7c4055")
 	(paper "A4")
 	(title_block
@@ -92,17 +92,17 @@
 				)
 			)
 			(symbol "Raspberry_Pi_2_3_1_1"
-				(pin power_in line
-					(at 5.08 33.02 270)
+				(pin bidirectional line
+					(at -20.32 22.86 0)
 					(length 2.54)
-					(name "3V3"
+					(name "GPIO14/TXD"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -121,6 +121,24 @@
 						)
 					)
 					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 15.24 0)
+					(length 2.54)
+					(name "GPIO16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "36"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -165,16 +183,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at -20.32 -17.78 0)
+					(at -20.32 5.08 0)
 					(length 2.54)
-					(name "GPIO27"
+					(name "GPIO19/MISO1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "13"
+					(number "35"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -182,17 +200,35 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -33.02 90)
-					(length 2.54) hide
-					(name "GND"
+				(pin bidirectional line
+					(at -20.32 2.54 0)
+					(length 2.54)
+					(name "GPIO20/MOSI1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "14"
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 0 0)
+					(length 2.54)
+					(name "GPIO21/SCLK1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "40"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -236,24 +272,6 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 5.08 33.02 270)
-					(length 2.54) hide
-					(name "3V3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin bidirectional line
 					(at -20.32 -10.16 0)
 					(length 2.54)
@@ -265,78 +283,6 @@
 						)
 					)
 					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 20.32 -10.16 180)
-					(length 2.54)
-					(name "MOSI0/GPIO10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -5.08 33.02 270)
-					(length 2.54)
-					(name "5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -33.02 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 20.32 -7.62 180)
-					(length 2.54)
-					(name "MISO0/GPIO9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -363,16 +309,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at 20.32 -12.7 180)
+					(at -20.32 -15.24 0)
 					(length 2.54)
-					(name "SCLK0/GPIO11"
+					(name "GPIO26"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "23"
+					(number "37"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -381,16 +327,53 @@
 					)
 				)
 				(pin bidirectional line
-					(at 20.32 -5.08 180)
+					(at -20.32 -17.78 0)
 					(length 2.54)
-					(name "~{CE0}/GPIO8"
+					(name "GPIO27"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "24"
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 33.02 270)
+					(length 2.54)
+					(name "5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 33.02 270)
+					(length 2.54)
+					(hide yes)
+					(name "5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -400,7 +383,46 @@
 				)
 				(pin passive line
 					(at 0 -33.02 90)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -33.02 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -33.02 90)
+					(length 2.54)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -416,17 +438,130 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 20.32 -2.54 180)
+				(pin passive line
+					(at 0 -33.02 90)
 					(length 2.54)
-					(name "~{CE1}/GPIO7"
+					(hide yes)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "26"
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -33.02 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -33.02 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -33.02 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -33.02 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 5.08 33.02 270)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 33.02 270)
+					(length 2.54)
+					(hide yes)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -471,6 +606,60 @@
 					)
 				)
 				(pin bidirectional line
+					(at 20.32 15.24 180)
+					(length 2.54)
+					(name "SDA/GPIO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 12.7 180)
+					(length 2.54)
+					(name "SCL/GPIO3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 7.62 180)
+					(length 2.54)
+					(name "GCLK0/GPIO4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
 					(at 20.32 5.08 180)
 					(length 2.54)
 					(name "GCLK1/GPIO5"
@@ -489,42 +678,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at 20.32 15.24 180)
-					(length 2.54)
-					(name "SDA/GPIO2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -33.02 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at 20.32 2.54 180)
 					(length 2.54)
 					(name "GCLK2/GPIO6"
@@ -535,6 +688,96 @@
 						)
 					)
 					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -2.54 180)
+					(length 2.54)
+					(name "~{CE1}/GPIO7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -5.08 180)
+					(length 2.54)
+					(name "~{CE0}/GPIO8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -7.62 180)
+					(length 2.54)
+					(name "MISO0/GPIO9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -10.16 180)
+					(length 2.54)
+					(name "MOSI0/GPIO10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -12.7 180)
+					(length 2.54)
+					(name "SCLK0/GPIO11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -578,246 +821,17 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -33.02 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "34"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -20.32 5.08 0)
-					(length 2.54)
-					(name "GPIO19/MISO1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "35"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -20.32 15.24 0)
-					(length 2.54)
-					(name "GPIO16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "36"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -20.32 -15.24 0)
-					(length 2.54)
-					(name "GPIO26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "37"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -20.32 2.54 0)
-					(length 2.54)
-					(name "GPIO20/MOSI1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "38"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -33.02 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "39"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 33.02 270)
-					(length 2.54) hide
-					(name "5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -20.32 0 0)
-					(length 2.54)
-					(name "GPIO21/SCLK1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "40"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 20.32 12.7 180)
-					(length 2.54)
-					(name "SCL/GPIO3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -33.02 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 20.32 7.62 180)
-					(length 2.54)
-					(name "GCLK0/GPIO4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -20.32 22.86 0)
-					(length 2.54)
-					(name "GPIO14/TXD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -33.02 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -887,10 +901,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -899,10 +913,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -948,11 +962,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1070,6 +1089,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
@@ -1152,6 +1172,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Security:ATECC608A-MAHDA"
 			(exclude_from_sim no)
@@ -1234,7 +1255,8 @@
 			(symbol "ATECC608A-MAHDA_1_1"
 				(pin no_connect line
 					(at -5.08 2.54 0)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "NC"
 						(effects
 							(font
@@ -1252,7 +1274,8 @@
 				)
 				(pin no_connect line
 					(at -5.08 0 0)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "NC"
 						(effects
 							(font
@@ -1270,7 +1293,8 @@
 				)
 				(pin no_connect line
 					(at -5.08 -2.54 0)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "NC"
 						(effects
 							(font
@@ -1279,6 +1303,42 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 -7.62 90)
+					(length 2.54)
+					(name "EP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1297,6 +1357,25 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 0 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1340,67 +1419,18 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 5.08 0 180)
-					(length 2.54) hide
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -2.54 -7.62 90)
-					(length 2.54)
-					(name "EP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1491,12 +1521,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1587,7 +1622,104 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 163.83 35.56)
+		(end 229.87 76.2)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 131c2cc6-c97a-405e-811a-45150d8a1cc2)
+	)
+	(rectangle
+		(start 62.23 35.56)
+		(end 153.67 134.62)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9c9af51f-17f6-4150-a176-e7f3ffaa4f5e)
+	)
+	(rectangle
+		(start 163.83 85.09)
+		(end 229.87 134.62)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ba6c0397-0c8c-4d0f-9328-afd14acc27da)
+	)
+	(text "NervesKey"
+		(exclude_from_sim no)
+		(at 163.83 33.02 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "51d5eab9-1f76-49e6-8d78-002aa8347d76")
+	)
+	(text "Mounting Holes"
+		(exclude_from_sim no)
+		(at 163.83 82.55 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "9b1e3287-8a9c-4189-b0cf-892aa9adab8e")
+	)
+	(text "Raspberry Pi"
+		(exclude_from_sim no)
+		(at 66.04 33.02 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "a7d2c8e9-7a71-4120-8a21-3997eb834e12")
+	)
+	(text_box "Design Notes:\n\n- Raspberry Pi is powered by 5V, onboard regulator supplies 3.3V to board\n- I2C pull up to 3.3V only when Pi is powered\n- Weak pull-downs on I2C to prevent floating when sleeping\n- GPIO26 is used for gpio-poweroff device tree overlay"
+		(exclude_from_sim no)
+		(at 62.23 137.16 0)
+		(size 91.44 15.24)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "0c10cbef-6dfe-4139-88ce-d5fb166ecf62")
 	)
 	(junction
 		(at 134.62 72.39)
@@ -2054,42 +2186,6 @@
 			(type default)
 		)
 		(uuid "f4dad60b-ad44-4761-b315-8d01227171f8")
-	)
-	(rectangle
-		(start 163.83 35.56)
-		(end 229.87 76.2)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 131c2cc6-c97a-405e-811a-45150d8a1cc2)
-	)
-	(rectangle
-		(start 62.23 35.56)
-		(end 153.67 134.62)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 9c9af51f-17f6-4150-a176-e7f3ffaa4f5e)
-	)
-	(rectangle
-		(start 163.83 85.09)
-		(end 229.87 134.62)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid ba6c0397-0c8c-4d0f-9328-afd14acc27da)
 	)
 	(image
 		(at 196.85 114.3)
@@ -3596,72 +3692,48 @@
 			"AAIQgAAEIAABCEAAAr4igHPEV5ebzkIAAhCAAAQgAAEIQAACEIAABCAQTADnSDAR3kMAAhCAAAQg"
 			"AAEIQAACEIAABCDgKwI4R3x1ueksBCAAAQhAAAIQgAAEIAABCEAAAsEEcI4EE+E9BCAAAQhAAAIQ"
 			"gAAEIAABCEAAAr4igHPEV5ebzkIAAhCAAAQgAAEIQAACEIAABCAQTOD/Aai05xHM4wJQAAAAAElF"
-			"TkSuQmCC"
+			"TkSuQmCCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAECBAj8BQTe/8cWEiBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECAwERB4J0eaQYAAAQIE"
+			"CBAgQIAAAQIECBAgQIAAAQIECBAgQIDAX0Dg/X9sIQECBAgQIECAAAECBAgQIECAAAECBAgQIECA"
+			"AAECEwGBd3KkGQQIECBAAAAseAAAAABo2syF2H8AAAIAAAABAgQI0N0cFtl/AAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAMBEITgCAy4XYfwAAAAAAAAEAAACAYIIUAQAAACAHDJzYfwAA4NjM"
+			"hdh/AAAg6lMlAQAAAHCPUSUBAAAAMONqFAEAAABwj1ElAQAAAFDqUyUBAAAAsPhVJQEAAACQ42oU"
+			"AQAAALD4VSUBAAAA4OpqFAEAAABwj1ElAQAAAIDqUyUBAAAA8ItRJQEAAAAw42oUAQAAAPCLUSUB"
+			"AAAAsOpTJQEAAACwM2IUAQAAABBuahQBAAAA4OpTJQEAAACw91UlAQAAAJDjahQBAAAAsDNiFAEA"
+			"AADg6moUAQAAAPCLUSUBAAAAEOtTJQEAAACwM2IUAQAAABBuahQBAAAAsDNiFAEAAABA61MlAQAA"
+			"ADD4VSUBAAAA4OpqFAEAAACwM2IUAQAAAHDrUyUBAAAAsDNiFAEAAAAQbmoUAQAAALAzYhQBAAAA"
+			"oOtTJQEAAADw9lUlAQAAAEDrahQBAAAAsDNiFAEAAABQHWMUAQAAAHCPUSUBAAAA8ItRJQEAAACw"
+			"M2IUAQAAALAzYhQBAAAAUB1jFAEAAADQ61MlAQAAAADsUyUBAAAA8BxoFAEAAACA6moUAQAAADDs"
+			"UyUBAAAAsDNiFAEAAADg6moUAQAAAGDsUyUBAAAAsMlRJQEAAABA62oUAQAAALDJUSUBAAAAsDNi"
+			"FAEAAACwyVElAQAAALDJUSUBAAAAsDNiFAEAAACwyVElAQAAALDJUSUBAAAAsDNiFAEAAACwyVEl"
+			"AQAAAAAALXgAAAAAYNnMhdh/AAADAAAAAQAAAODlHBbZfwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAEAAAAAgMuF2H8AAAAAACAAAAAAwOxTJQEAAAAgBwyc2H8AANjXzIXYfwAAAAAAEAEA"
+			"DgAAAAAAkuAHALAzYhQBAAAA4OpqFAEAAACwM2IUAQAAALAzYhQBAAAAsDNiFAEAAAAg7VMlAQAA"
+			"ALDJUSUBAAAA4OpqFAEAAACwyVElAQAAALDJUSUBAAAAUO1TJQEAAACwM2IUAQAAABBuahQBAAAA"
+			"sDNiFAEAAACA7VMlAQAAADAQVSUBAAAAgOpqFAEAAABA62oUAQAAAEDrahQBAAAAsDNiFAEAAABQ"
+			"HWMUAQ=="
 		)
-	)
-	(text_box "Design Notes:\n\n- Raspberry Pi is powered by 5V, onboard regulator supplies 3.3V to board\n- I2C pull up to 3.3V only when Pi is powered\n- Weak pull-downs on I2C to prevent floating when sleeping\n- GPIO26 is used for gpio-poweroff device tree overlay"
-		(exclude_from_sim no)
-		(at 62.23 137.16 0)
-		(size 91.44 15.24)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type color)
-			(color 255 255 194 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "0c10cbef-6dfe-4139-88ce-d5fb166ecf62")
-	)
-	(text "NervesKey"
-		(exclude_from_sim no)
-		(at 163.83 33.02 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "51d5eab9-1f76-49e6-8d78-002aa8347d76")
-	)
-	(text "Mounting Holes"
-		(exclude_from_sim no)
-		(at 163.83 82.55 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "9b1e3287-8a9c-4189-b0cf-892aa9adab8e")
-	)
-	(text "Raspberry Pi"
-		(exclude_from_sim no)
-		(at 66.04 33.02 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "a7d2c8e9-7a71-4120-8a21-3997eb834e12")
 	)
 	(hierarchical_label "5V"
 		(shape input)
 		(at 93.98 49.53 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3673,7 +3745,6 @@
 	(hierarchical_label "I2C_SDA"
 		(shape bidirectional)
 		(at 209.55 53.34 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3685,7 +3756,6 @@
 	(hierarchical_label "3V3"
 		(shape output)
 		(at 181.61 50.8 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3697,7 +3767,6 @@
 	(hierarchical_label "I2C_SDA"
 		(shape bidirectional)
 		(at 138.43 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3709,7 +3778,6 @@
 	(hierarchical_label "I2C_SCL"
 		(shape bidirectional)
 		(at 138.43 72.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3721,7 +3789,6 @@
 	(hierarchical_label "I2C_SCL"
 		(shape bidirectional)
 		(at 209.55 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3733,7 +3800,6 @@
 	(hierarchical_label "3V3"
 		(shape output)
 		(at 198.12 46.99 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3745,7 +3811,6 @@
 	(hierarchical_label "3V3"
 		(shape output)
 		(at 132.08 58.42 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3757,7 +3822,6 @@
 	(hierarchical_label "GPIO26"
 		(shape output)
 		(at 73.66 100.33 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3769,7 +3833,6 @@
 	(hierarchical_label "3V3"
 		(shape output)
 		(at 104.14 49.53 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

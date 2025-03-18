@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "27ba269d-90a0-4d80-845f-19f5725c0ffd")
 	(paper "A4")
 	(title_block
@@ -13,9 +13,13 @@
 	(lib_symbols
 		(symbol "power:+3V3"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -87,7 +91,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -99,7 +103,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -130,12 +134,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+4V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -207,7 +216,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -219,7 +228,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -250,12 +259,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+BATT"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -327,7 +341,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -339,7 +353,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -370,12 +384,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:VBUS"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -447,7 +466,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -459,7 +478,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -490,6 +509,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -926,7 +946,6 @@
 	)
 	(label "I2C_SDA"
 		(at 207.01 83.82 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -937,7 +956,6 @@
 	)
 	(label "I2C_SCL"
 		(at 87.63 157.48 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -948,7 +966,6 @@
 	)
 	(label "I2C_SCL"
 		(at 207.01 87.63 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -959,7 +976,6 @@
 	)
 	(label "I2C_SDA"
 		(at 87.63 153.67 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -970,7 +986,6 @@
 	)
 	(label "I2C_SCL"
 		(at 86.36 115.57 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -981,7 +996,6 @@
 	)
 	(label "I2C_SDA"
 		(at 86.36 111.76 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1785,6 +1799,10 @@
 	(sheet
 		(at 218.44 54.61)
 		(size 38.1 64.77)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1814,53 +1832,53 @@
 		)
 		(pin "I2C_SCL" bidirectional
 			(at 218.44 87.63 180)
+			(uuid "c73a291e-50a3-4018-a9ee-444578472c72")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c73a291e-50a3-4018-a9ee-444578472c72")
 		)
 		(pin "I2C_SDA" bidirectional
 			(at 218.44 83.82 180)
+			(uuid "2742bcab-a034-40c1-8fb5-2dd883bf26dc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2742bcab-a034-40c1-8fb5-2dd883bf26dc")
 		)
 		(pin "5V" input
 			(at 218.44 58.42 180)
+			(uuid "4e9fabbf-de67-4441-8233-4b36f5d18eb2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4e9fabbf-de67-4441-8233-4b36f5d18eb2")
 		)
 		(pin "GPIO26" output
 			(at 218.44 110.49 180)
+			(uuid "a9af0317-abd3-4815-9c49-46ea18231238")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a9af0317-abd3-4815-9c49-46ea18231238")
 		)
 		(pin "3V3" output
 			(at 218.44 80.01 180)
+			(uuid "a942e719-51de-4a2b-b67e-27cfa2719743")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a942e719-51de-4a2b-b67e-27cfa2719743")
 		)
 		(instances
 			(project "soleil"
@@ -1873,6 +1891,10 @@
 	(sheet
 		(at 49.53 88.9)
 		(size 27.94 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1902,53 +1924,53 @@
 		)
 		(pin "~{BATT_LOW}" output
 			(at 77.47 104.14 0)
+			(uuid "dce37baa-00c4-4a89-a8f5-312c83df30b7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "dce37baa-00c4-4a89-a8f5-312c83df30b7")
 		)
 		(pin "BATT" passive
 			(at 77.47 92.71 0)
+			(uuid "11816c02-6e33-4869-96f6-27926a8fd3b3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "11816c02-6e33-4869-96f6-27926a8fd3b3")
 		)
 		(pin "I2C_SDA" bidirectional
 			(at 77.47 111.76 0)
+			(uuid "2f401e49-0701-45eb-b965-43d288501a73")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2f401e49-0701-45eb-b965-43d288501a73")
 		)
 		(pin "I2C_SCL" bidirectional
 			(at 77.47 115.57 0)
+			(uuid "89bc5e74-d106-4589-9515-dcf0b7c7992e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "89bc5e74-d106-4589-9515-dcf0b7c7992e")
 		)
 		(pin "V_SYS" input
 			(at 77.47 96.52 0)
+			(uuid "b05b4544-6fff-4a87-ad8f-3ec8e34ea7fd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b05b4544-6fff-4a87-ad8f-3ec8e34ea7fd")
 		)
 		(instances
 			(project "soleil"
@@ -1961,6 +1983,10 @@
 	(sheet
 		(at 166.37 101.6)
 		(size 38.1 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1990,43 +2016,43 @@
 		)
 		(pin "~{POWER_ON}" input
 			(at 166.37 110.49 180)
+			(uuid "7c416b7c-dbc2-43e6-a43e-67c599f8ebcb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7c416b7c-dbc2-43e6-a43e-67c599f8ebcb")
 		)
 		(pin "POWER_OFF" input
 			(at 204.47 110.49 0)
+			(uuid "876657b4-fa6e-4543-b057-49f83caf14be")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "876657b4-fa6e-4543-b057-49f83caf14be")
 		)
 		(pin "5V_EN" output
 			(at 166.37 115.57 180)
+			(uuid "163aa722-037a-41cd-83d7-991596f5d547")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "163aa722-037a-41cd-83d7-991596f5d547")
 		)
 		(pin "V_SYS" input
 			(at 166.37 105.41 180)
+			(uuid "87e0b21b-16fb-4540-af2d-b16b120251bd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "87e0b21b-16fb-4540-af2d-b16b120251bd")
 		)
 		(instances
 			(project "soleil"
@@ -2039,6 +2065,10 @@
 	(sheet
 		(at 49.53 140.97)
 		(size 27.94 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2068,33 +2098,33 @@
 		)
 		(pin "I2C_SDA" input
 			(at 77.47 153.67 0)
+			(uuid "9f479442-648f-4aa5-92e2-f49bdbe5b67a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9f479442-648f-4aa5-92e2-f49bdbe5b67a")
 		)
 		(pin "3V3" input
 			(at 77.47 147.32 0)
+			(uuid "31234598-c333-4a4c-b6da-66f35b60c592")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "31234598-c333-4a4c-b6da-66f35b60c592")
 		)
 		(pin "I2C_SCL" input
 			(at 77.47 157.48 0)
+			(uuid "36440c3d-5c4d-4219-83a5-073f09ec7755")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "36440c3d-5c4d-4219-83a5-073f09ec7755")
 		)
 		(instances
 			(project "soleil"
@@ -2107,6 +2137,10 @@
 	(sheet
 		(at 101.6 54.61)
 		(size 33.02 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2136,43 +2170,43 @@
 		)
 		(pin "V_SYS" output
 			(at 134.62 58.42 0)
+			(uuid "d5712053-b598-4980-bfe0-d56d7ee89dc4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d5712053-b598-4980-bfe0-d56d7ee89dc4")
 		)
 		(pin "BATT" passive
 			(at 101.6 80.01 180)
+			(uuid "439e0212-73e1-4b5b-8d91-07c4f252ede8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "439e0212-73e1-4b5b-8d91-07c4f252ede8")
 		)
 		(pin "V_USB" input
 			(at 101.6 58.42 180)
+			(uuid "a6e7d5d5-da09-4ee3-be19-e82285956d1f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a6e7d5d5-da09-4ee3-be19-e82285956d1f")
 		)
 		(pin "V_CHARGE" input
 			(at 101.6 63.5 180)
+			(uuid "4d92f6a7-5680-403e-90dd-e52ddba45cb6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4d92f6a7-5680-403e-90dd-e52ddba45cb6")
 		)
 		(instances
 			(project "soleil"
@@ -2185,6 +2219,10 @@
 	(sheet
 		(at 49.53 54.61)
 		(size 27.94 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2214,23 +2252,23 @@
 		)
 		(pin "V_USB" output
 			(at 77.47 58.42 0)
+			(uuid "6608c7a3-dd92-4f2a-b92c-fdb14653405b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6608c7a3-dd92-4f2a-b92c-fdb14653405b")
 		)
 		(pin "V_USB_OR_SOLAR" output
 			(at 77.47 63.5 0)
+			(uuid "216576cb-a0a7-4331-a35b-1b6da6e85189")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "216576cb-a0a7-4331-a35b-1b6da6e85189")
 		)
 		(instances
 			(project "soleil"
@@ -2243,6 +2281,10 @@
 	(sheet
 		(at 166.37 54.61)
 		(size 38.1 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2272,33 +2314,33 @@
 		)
 		(pin "5V_EN" input
 			(at 166.37 63.5 180)
+			(uuid "8933b200-0931-4c9c-bd1c-0fc448a4ef88")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8933b200-0931-4c9c-bd1c-0fc448a4ef88")
 		)
 		(pin "V_SYS" input
 			(at 166.37 58.42 180)
+			(uuid "2567fd1d-7a89-4564-ba3e-938e12187094")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2567fd1d-7a89-4564-ba3e-938e12187094")
 		)
 		(pin "5V" output
 			(at 204.47 58.42 0)
+			(uuid "37555b67-e50c-4dc3-80c4-d50c8923838e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "37555b67-e50c-4dc3-80c4-d50c8923838e")
 		)
 		(instances
 			(project "soleil"
@@ -2311,6 +2353,10 @@
 	(sheet
 		(at 166.37 76.2)
 		(size 38.1 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2340,63 +2386,63 @@
 		)
 		(pin "~{WAKE_UP}" output
 			(at 166.37 87.63 180)
+			(uuid "2a02cbc1-d1c5-4e9c-89eb-5823722d4c46")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2a02cbc1-d1c5-4e9c-89eb-5823722d4c46")
 		)
 		(pin "I2C_SDA" bidirectional
 			(at 204.47 83.82 0)
+			(uuid "73bbd147-45d0-4d96-b90f-67ae17f70d09")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "73bbd147-45d0-4d96-b90f-67ae17f70d09")
 		)
 		(pin "I2C_SCL" bidirectional
 			(at 204.47 87.63 0)
+			(uuid "8caef2b4-6d5f-4fdd-a269-0804a2b9f726")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8caef2b4-6d5f-4fdd-a269-0804a2b9f726")
 		)
 		(pin "BATT" input
 			(at 166.37 83.82 180)
+			(uuid "bd2d8034-69e9-4c9a-8f54-7ae3c550a3a3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bd2d8034-69e9-4c9a-8f54-7ae3c550a3a3")
 		)
 		(pin "V_SYS" input
 			(at 166.37 80.01 180)
+			(uuid "607d4547-bddc-4294-9675-2c5ba19ea633")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "607d4547-bddc-4294-9675-2c5ba19ea633")
 		)
 		(pin "3V3" input
 			(at 204.47 80.01 0)
+			(uuid "c984c801-e9e9-4032-ba89-2c4de03aca36")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c984c801-e9e9-4032-ba89-2c4de03aca36")
 		)
 		(instances
 			(project "soleil"

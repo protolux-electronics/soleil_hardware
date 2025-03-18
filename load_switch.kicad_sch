@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "7d56ea20-5203-45ba-a2e4-bcbe994a4b80")
 	(paper "A4")
 	(title_block
@@ -12,9 +12,13 @@
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -84,10 +88,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -96,10 +100,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -145,11 +149,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -267,6 +276,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "gworkman_power:XC6192"
 			(exclude_from_sim no)
@@ -379,17 +389,17 @@
 						)
 					)
 				)
-				(pin open_collector line
-					(at 10.16 -3.81 180)
+				(pin input line
+					(at -10.16 -3.81 0)
 					(length 2.54)
-					(name "PG"
+					(name "SHDN"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -415,24 +425,6 @@
 						)
 					)
 				)
-				(pin input line
-					(at -10.16 -3.81 0)
-					(length 2.54)
-					(name "SHDN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_out line
 					(at 10.16 3.81 180)
 					(length 2.54)
@@ -451,11 +443,30 @@
 						)
 					)
 				)
+				(pin open_collector line
+					(at 10.16 -3.81 180)
+					(length 2.54)
+					(name "PG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(symbol "XC6192_1_0"
 				(pin passive line
 					(at 0 -8.89 90)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "NC"
 						(effects
 							(font
@@ -473,7 +484,8 @@
 				)
 				(pin passive line
 					(at 0 -8.89 90)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "TEST"
 						(effects
 							(font
@@ -491,7 +503,8 @@
 				)
 				(pin passive line
 					(at 0 -8.89 90)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "EP"
 						(effects
 							(font
@@ -521,12 +534,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -617,7 +635,55 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 97.79 63.5)
+		(end 196.85 106.68)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ba2338d0-82c2-4973-9d20-073e9973f62e)
+	)
+	(text "Load Switch"
+		(exclude_from_sim no)
+		(at 97.79 60.96 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "8754281c-4105-428b-8720-d5e531493597")
+	)
+	(text_box "Design Notes:\n\nXC6192B is an extreme low-power load switch with integrated button controller. When SW is pulled low, it enables VOUT. When SHDN is pulled low, it asserts low on PG and disables VOUT\n\n- Iq is 10nA in shutdown\n- ~{POWER_ON} pulled up, assert low to enable power output\n- POWER_OFF pulled down, assert high to disable power output"
+		(exclude_from_sim no)
+		(at 97.79 109.22 0)
+		(size 99.06 19.05)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left top)
+		)
+		(uuid "2aeec09a-86f7-4da1-bb42-7f12cc1e2f03")
 	)
 	(junction
 		(at 162.56 80.01)
@@ -879,56 +945,9 @@
 		)
 		(uuid "f7ead090-4948-4c38-983f-9a32b61d566b")
 	)
-	(rectangle
-		(start 97.79 63.5)
-		(end 196.85 106.68)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid ba2338d0-82c2-4973-9d20-073e9973f62e)
-	)
-	(text_box "Design Notes:\n\nXC6192B is an extreme low-power load switch with integrated button controller. When SW is pulled low, it enables VOUT. When SHDN is pulled low, it asserts low on PG and disables VOUT\n\n- Iq is 10nA in shutdown\n- ~{POWER_ON} pulled up, assert low to enable power output\n- POWER_OFF pulled down, assert high to disable power output"
-		(exclude_from_sim no)
-		(at 97.79 109.22 0)
-		(size 99.06 19.05)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type color)
-			(color 255 255 194 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left top)
-		)
-		(uuid "2aeec09a-86f7-4da1-bb42-7f12cc1e2f03")
-	)
-	(text "Load Switch"
-		(exclude_from_sim no)
-		(at 97.79 60.96 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "8754281c-4105-428b-8720-d5e531493597")
-	)
 	(hierarchical_label "~{POWER_ON}"
 		(shape input)
 		(at 127 85.09 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -940,7 +959,6 @@
 	(hierarchical_label "POWER_OFF"
 		(shape input)
 		(at 127 87.63 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -952,7 +970,6 @@
 	(hierarchical_label "5V_EN"
 		(shape output)
 		(at 162.56 91.44 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -964,7 +981,6 @@
 	(hierarchical_label "V_SYS"
 		(shape input)
 		(at 129.54 76.2 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -976,7 +992,6 @@
 	(hierarchical_label "V_SYS"
 		(shape input)
 		(at 109.22 81.28 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

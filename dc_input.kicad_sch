@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "834370dc-b8b3-4251-9979-0b2129d11dac")
 	(paper "A4")
 	(title_block
@@ -95,8 +95,8 @@
 					)
 				)
 				(rectangle
-					(start 10.16 -7.366)
-					(end 9.144 -7.874)
+					(start 10.16 7.874)
+					(end 9.144 7.366)
 					(stroke
 						(width 0)
 						(type default)
@@ -117,8 +117,8 @@
 					)
 				)
 				(rectangle
-					(start 10.16 7.874)
-					(end 9.144 7.366)
+					(start 10.16 -7.366)
+					(end 9.144 -7.874)
 					(stroke
 						(width 0)
 						(type default)
@@ -140,40 +140,16 @@
 						(type background)
 					)
 				)
-				(arc
-					(start -8.89 -1.27)
-					(mid -6.985 -3.1667)
-					(end -5.08 -1.27)
+				(polyline
+					(pts
+						(xy -8.89 -1.27) (xy -8.89 6.35)
+					)
 					(stroke
 						(width 0.508)
 						(type default)
 					)
 					(fill
 						(type none)
-					)
-				)
-				(arc
-					(start -7.62 -1.27)
-					(mid -6.985 -1.9023)
-					(end -6.35 -1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -7.62 -1.27)
-					(mid -6.985 -1.9023)
-					(end -6.35 -1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 				(rectangle
@@ -188,9 +164,9 @@
 					)
 				)
 				(arc
-					(start -6.35 6.35)
+					(start -7.62 6.35)
 					(mid -6.985 6.9823)
-					(end -7.62 6.35)
+					(end -6.35 6.35)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -200,9 +176,9 @@
 					)
 				)
 				(arc
-					(start -6.35 6.35)
+					(start -7.62 6.35)
 					(mid -6.985 6.9823)
-					(end -7.62 6.35)
+					(end -6.35 6.35)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -212,9 +188,57 @@
 					)
 				)
 				(arc
-					(start -5.08 6.35)
+					(start -8.89 6.35)
 					(mid -6.985 8.2467)
-					(end -8.89 6.35)
+					(end -5.08 6.35)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -5.08 -1.27)
+					(mid -6.985 -3.1667)
+					(end -8.89 -1.27)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 -1.27)
+					(mid -6.985 -1.9023)
+					(end -7.62 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 -1.27)
+					(mid -6.985 -1.9023)
+					(end -7.62 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 6.35) (xy -5.08 -1.27)
+					)
 					(stroke
 						(width 0.508)
 						(type default)
@@ -234,11 +258,12 @@
 						(type outline)
 					)
 				)
-				(circle
-					(center 0 -3.302)
-					(radius 1.27)
+				(polyline
+					(pts
+						(xy -1.27 6.858) (xy 0 9.398) (xy 1.27 6.858) (xy -1.27 6.858)
+					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -247,31 +272,7 @@
 				)
 				(polyline
 					(pts
-						(xy -8.89 -1.27) (xy -8.89 6.35)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 6.35) (xy -5.08 -1.27)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -3.302) (xy 0 6.858)
+						(xy 0 0.508) (xy 2.54 3.048) (xy 2.54 4.318)
 					)
 					(stroke
 						(width 0.508)
@@ -295,7 +296,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.508) (xy 2.54 3.048) (xy 2.54 4.318)
+						(xy 0 -3.302) (xy 0 6.858)
 					)
 					(stroke
 						(width 0.508)
@@ -305,12 +306,11 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.27 6.858) (xy 0 9.398) (xy 1.27 6.858) (xy -1.27 6.858)
-					)
+				(circle
+					(center 0 -3.302)
+					(radius 1.27)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -331,6 +331,24 @@
 			)
 			(symbol "USB_C_Receptacle_PowerOnly_6P_1_1"
 				(pin passive line
+					(at -7.62 -17.78 90)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 0 -17.78 90)
 					(length 5.08)
 					(name "GND"
@@ -348,17 +366,18 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 15.24 -5.08 180)
+				(pin passive line
+					(at 0 -17.78 90)
 					(length 5.08)
-					(name "CC1"
+					(hide yes)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "A5"
+					(number "B12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -385,16 +404,35 @@
 					)
 				)
 				(pin passive line
-					(at 0 -17.78 90)
-					(length 5.08) hide
-					(name "GND"
+					(at 15.24 7.62 180)
+					(length 5.08)
+					(hide yes)
+					(name "VBUS"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "B12"
+					(number "B9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -5.08 180)
+					(length 5.08)
+					(name "CC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -420,47 +458,14 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 15.24 7.62 180)
-					(length 5.08) hide
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 -17.78 90)
-					(length 5.08)
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "S1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -527,14 +532,14 @@
 			)
 			(symbol "Conn_01x02_1_1"
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
@@ -549,14 +554,14 @@
 					)
 				)
 				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -596,11 +601,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -670,10 +680,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -682,10 +692,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -731,11 +741,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -853,10 +868,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Diode:ESD5Zxx"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -924,10 +944,10 @@
 			(symbol "ESD5Zxx_0_1"
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -936,10 +956,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -997,6 +1017,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Regulator_Linear:TLV76701DRVx"
 			(exclude_from_sim no)
@@ -1077,6 +1098,97 @@
 				)
 			)
 			(symbol "TLV76701DRVx_1_1"
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -7.62 90)
+					(length 2.54)
+					(name "PAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_out line
 					(at 7.62 2.54 180)
 					(length 2.54)
@@ -1113,97 +1225,8 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -7.62 90)
-					(length 2.54)
-					(name "PAD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "gworkman_power:LM66200"
 			(exclude_from_sim no)
@@ -1292,42 +1315,6 @@
 					)
 				)
 				(pin power_in line
-					(at 0 -8.89 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 10.16 3.81 180)
-					(length 2.54)
-					(name "VOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at -10.16 3.81 0)
 					(length 2.54)
 					(name "VIN1"
@@ -1338,6 +1325,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 1.27 0)
+					(length 2.54)
+					(name "VIN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1365,7 +1370,26 @@
 				)
 				(pin power_in line
 					(at 0 -8.89 90)
-					(length 2.54) hide
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -8.89 90)
+					(length 2.54)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -1381,17 +1405,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -10.16 1.27 0)
+				(pin power_out line
+					(at 10.16 3.81 180)
 					(length 2.54)
-					(name "VIN2"
+					(name "VOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1401,7 +1425,8 @@
 				)
 				(pin power_out line
 					(at 10.16 3.81 180)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "VOUT"
 						(effects
 							(font
@@ -1436,12 +1461,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1532,12 +1562,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1628,7 +1663,196 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 36.83 86.36)
+		(end 133.35 129.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 4a60a683-3624-4057-992c-c99abec60505)
+	)
+	(rectangle
+		(start 163.83 97.79)
+		(end 260.35 135.89)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 54c1f292-c0c2-4ad4-b875-f75d9046b000)
+	)
+	(rectangle
+		(start 36.83 26.67)
+		(end 133.35 62.23)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 7aa4689c-e8fc-4ee6-9a27-d66cf5d917fb)
+	)
+	(rectangle
+		(start 163.83 26.67)
+		(end 260.35 77.47)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 8beb0a17-fb8b-4d68-9c53-5fdfeecef967)
+	)
+	(text "USB Connector"
+		(exclude_from_sim no)
+		(at 163.83 24.13 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "255eff9a-b6f0-4e30-9112-6420d6f76d98")
+	)
+	(text "DC Power Multiplexer"
+		(exclude_from_sim no)
+		(at 163.83 95.25 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "2e6036dc-6142-4c17-867e-825a9caed7e8")
+	)
+	(text "DC/Solar 6V LDO"
+		(exclude_from_sim no)
+		(at 36.83 83.82 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "814f060f-e891-4575-b2ba-f29c7ab70afb")
+	)
+	(text "DC/Solar Connector"
+		(exclude_from_sim no)
+		(at 36.83 24.13 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "b017c107-2985-455b-8c17-bf5f0a428294")
+	)
+	(text_box "Design Notes:\n\nThe TLV767 linear regulator is used to lower voltages greater than 6V to the maximum voltage supported by the power multiplexer. For DC_IN < 6V, the output voltage tracks the input voltage.\n\n- V_DC regulates to 5.6V\n- V_dropout is 0.4V @ 500mA\n- I_out up to 1A\n- Iq is 50uA, 1.5 uA in shutdown\n\n\n"
+		(exclude_from_sim no)
+		(at 36.83 132.08 0)
+		(size 96.52 24.13)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left top)
+		)
+		(uuid "34033bdb-f6a5-4756-a30f-7864c6495a6c")
+	)
+	(text_box "Design Note:\n\n5k1 resistors on CC1 and CC2 to negotiate up to 1.5A @ 5V with USB power delivery sources"
+		(exclude_from_sim no)
+		(at 163.83 80.01 0)
+		(size 96.52 8.89)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left top)
+		)
+		(uuid "47c4c85e-75f4-4265-ae32-f96daf944a9f")
+	)
+	(text_box "Design Note:\n\nSOLAR_IN supports solar panels up to 16V"
+		(exclude_from_sim no)
+		(at 36.83 64.77 0)
+		(size 96.52 8.89)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left top)
+		)
+		(uuid "6e4ff059-15e6-4b34-a7fb-af9e9cde2c4a")
+	)
+	(text_box "Design Notes:\n\nLM66200 performs power multiplexing, acting as two ideal diodes with cathodes tied together.\n\n- Input voltages between 1.6V - 6.0V\n- Up to 2.5A per channel\n- Iq is 1.3uA when powered from VIN1"
+		(exclude_from_sim no)
+		(at 163.83 138.43 0)
+		(size 96.52 17.78)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left top)
+		)
+		(uuid "88ec1315-a398-4ce5-b778-b74f9e820ace")
 	)
 	(junction
 		(at 212.09 124.46)
@@ -2476,54 +2700,6 @@
 		)
 		(uuid "fa647771-be5b-4a4a-962c-8c85b30fe41c")
 	)
-	(rectangle
-		(start 36.83 86.36)
-		(end 133.35 129.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 4a60a683-3624-4057-992c-c99abec60505)
-	)
-	(rectangle
-		(start 163.83 97.79)
-		(end 260.35 135.89)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 54c1f292-c0c2-4ad4-b875-f75d9046b000)
-	)
-	(rectangle
-		(start 36.83 26.67)
-		(end 133.35 62.23)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 7aa4689c-e8fc-4ee6-9a27-d66cf5d917fb)
-	)
-	(rectangle
-		(start 163.83 26.67)
-		(end 260.35 77.47)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 8beb0a17-fb8b-4d68-9c53-5fdfeecef967)
-	)
 	(image
 		(at 55.88 45.72)
 		(scale 0.136509)
@@ -3030,7 +3206,43 @@
 			"+Pp/WnHv9Kafvj6f1oAQffp5++PoaYPv08/fH0NADqgk+6f896nqCT7p/wA96AJj0NRDoalPQ1EO"
 			"hoAlHU01+q/WnDqaa/VfrQAf8tPwqNf9aak/5afhUa/600AT0w/fFPph++KAGnoPqKd/y0/CmnoP"
 			"qKd/y0/CgBT3+lNP3x9P6049/pTT98fT+tACD79PP3x9DTB9+nn74+hoAdUEn3T/AJ71PUEn3T/n"
-			"vQBPRRRQB//Z"
+			"vQBPRRRQB//ZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAVgAAAAAAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAkAAAAAAAAA"
+			"BgAAAAAAAACAZc8TAGAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAcAAAAAAAAABQAAAAAAAAAA"
+			"Qc8TAGAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAkAAAAAAAAABgAAAAAAAAAARM8TAGAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAgAAABwAAAAbwAAAGwAAABlAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAEAAAAAAAAAAkAAAAAAAAABgAAAAAAAAAgTs8TAGAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA"
+			"AAAAAAcAAAAAAAAABQAAAAAAAAAAas8TAGAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAgAAABE"
+			"AAAAUAAAAEQAAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAABEAAAAQwAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAgAAABjAAAAbwAAAGkAAABsAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAkAAAAAAAAABgAAAAAAAADAT88TAGAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAEAAAAAAAAAAgAAABjAAAAbwAAAGkAAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE"
+			"AAAAAAAAAAsAAAAAAAAACAAAAAAAAADg+uiWAGAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAD0A"
+			"AAAAAAAAOgAAAAAAAADQr34MAGAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAIcAAAAAAAAAhAAA"
+			"AAAAAADgI47q2H8AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAACMAAAAAAAAAIQAAAAAAAACQm6Uc"
+			"AGAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAIAAABLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAEAAAAAAAAAAsAAAAAAAAACAAAAAAAAAAw8OiWAGAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAEAAAAAAAAAEkAAAAAAAAARwAAAAAAAADwFo7q2H8AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA"
+			"AIcAAAAAAAAAhAAAAAAAAABgH47q2H8AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAACMAAAAAAAAA"
+			"IQAAAAAAAKOjo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Oj"
+			"o6Ojo6Ojow=="
 		)
 	)
 	(image
@@ -5634,148 +5846,47 @@
 			"ioqKygFFAEdFRUVFReWAIoCjoqKioqJyQBHAUVFRUVFROaAI4KioqKioqBxQBHBUVFRUVFQOKAI4"
 			"KioqKioqBxQBHBUVFRUVlQOKAI6KioqKisoBRQBHRUVFRUXlgCKAo6KioqKickARwFFRUVFRUTmg"
 			"COCoqKioqKgcUARwVFRUVFRUDigCOCoqKioqKgcUARwVFRUVFfVH1//3//3/tyyASJANVpUAAAAA"
-			"SUVORK5CYII="
+			"SUVORK5CYIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAADlHT21Ld2JEWTJZMDlsMjI1SE0wSG1KQld3Tkd3VXc3bzZFRXFpSnF6NlNJbFNhdTg1"
+			"TFV2d1RqRWJVQk8vMEdpTVhGRGdXR3dqYkhydTUzYmZJM2VRc2FWK2ZzMFZ6amFvTU1mb3NRRGJl"
+			"cmJYOTF5OWNWaldVVGUwbFo5cjdVYXRZMit3Q2xhaHFJaUxYTk81TWpWa1JiL0dQYjBoUTIxZVJp"
+			"MWZVRytVcUljdzQrWGEvVDFacjIzOHRKZTNyUzh4VjhHc09xdWhaS3Q1aW5QTEl5VElwQzNLZXRv"
+			"ekxMV1F3MFp3ak11UGhOS0xQa0hrbXdUREpoNkNEVHp0MmVSdThoVmVpejNtaWhjTFZUcFdEd01n"
+			"RHdlMlQxZmNjRmdXN3NBS2pSMHV6YmVlVlhJQ00xS2lxUVRkVllSMFNiUVcxVGlTUmI1dDZpenoz"
+			"bThzekszNnpMc2tJTWxNZVVqNXJkVVBMOFN4N0N5UGdta3Fscm5DbnhOb3A2ZytDdmVNbnRuYXp4"
+			"YmowN2dzTUhRVEl6STJqSXlNeU1qM2pJeTR5TXNzeU1qRkU2WDdDdndZaUNMaHdzdnpzQys2ZnV2"
+			"SUg1MHVFODJQWlIyQmZkUDNYa0IwdUU4MlBaWHVzTktQdEYrV3U5cVpiWFUyMVo5RHVOMFZEQzRk"
+			"WEVJbmN6MWIyYks3bE11VmpMNzRUN1VMZmdaQ1Via0FpQVJBSWdFUUNJQkVBaUFSQUlnRVFDSUJF"
+			"QWlBUkFJZ0VRQ0lCRUFpQVJBSWdFUUNJQkVBaS8vU2Y0QkVBaUFSQUlnRVFDSUJFQWlBUkFJZ0VR"
+			"Q0lCRUFpQVJBSWdFWHhINHV4ZnlwUEtRNDd1MHVRSy9naTN5NlpCYml2M2d1V09hNkVBaUFSZWZr"
+			"SXpkZFBvdUwrZkg0WTg3aHRLcU1Uck1IYUM0aW12QTgzdXlIV1dyME5ldUt0blBrSWNDMWQ3WkY3"
+			"VWU5VytnRVFDTEUxZWk3WlZKcXNpUFdkTS9jU0ZIcUdBeXVQWlY2WWROcTBrWTVtcnpic0RQUGds"
+			"NFhnRHlsaXFyS2hkVzlUOCs2a09veEwxc3Fsc0ZTMDZ0TXB5ZTh3SWlmQ2p0a0xqaTlCTjlSSHRG"
+			"alNzTjZ1VTg4anZiaXVlT3hlWkFJdGFNU0tkdWk3Wnp1cVI2ekVFdDh1OHcyaTk0TFd4U0xXckhI"
+			"c0QyaXl4bFdxNUxCWTJlblA5dUs4SjJEL0FDUlBoQ244aDlDeXVMcDdzbzdCL2tpZkNEa1BvV1Rw"
+			"N3NvN0Iva2lmQ0RrUG9XVHA3c3JNZUh1SHNaQk5WK3NSME9xTTB1VXlJNmdqUWtpUFdUT2VRZTh0"
+			"Um1YY1NUMw=="
 		)
-	)
-	(text_box "Design Notes:\n\nThe TLV767 linear regulator is used to lower voltages greater than 6V to the maximum voltage supported by the power multiplexer. For DC_IN < 6V, the output voltage tracks the input voltage.\n\n- V_DC regulates to 5.6V\n- V_dropout is 0.4V @ 500mA\n- I_out up to 1A\n- Iq is 50uA, 1.5 uA in shutdown\n\n\n"
-		(exclude_from_sim no)
-		(at 36.83 132.08 0)
-		(size 96.52 24.13)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type color)
-			(color 255 255 194 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left top)
-		)
-		(uuid "34033bdb-f6a5-4756-a30f-7864c6495a6c")
-	)
-	(text_box "Design Note:\n\n5k1 resistors on CC1 and CC2 to negotiate up to 1.5A @ 5V with USB power delivery sources"
-		(exclude_from_sim no)
-		(at 163.83 80.01 0)
-		(size 96.52 8.89)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type color)
-			(color 255 255 194 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left top)
-		)
-		(uuid "47c4c85e-75f4-4265-ae32-f96daf944a9f")
-	)
-	(text_box "Design Note:\n\nSOLAR_IN supports solar panels up to 16V"
-		(exclude_from_sim no)
-		(at 36.83 64.77 0)
-		(size 96.52 8.89)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type color)
-			(color 255 255 194 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left top)
-		)
-		(uuid "6e4ff059-15e6-4b34-a7fb-af9e9cde2c4a")
-	)
-	(text_box "Design Notes:\n\nLM66200 performs power multiplexing, acting as two ideal diodes with cathodes tied together.\n\n- Input voltages between 1.6V - 6.0V\n- Up to 2.5A per channel\n- Iq is 1.3uA when powered from VIN1"
-		(exclude_from_sim no)
-		(at 163.83 138.43 0)
-		(size 96.52 17.78)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type color)
-			(color 255 255 194 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left top)
-		)
-		(uuid "88ec1315-a398-4ce5-b778-b74f9e820ace")
-	)
-	(text "USB Connector"
-		(exclude_from_sim no)
-		(at 163.83 24.13 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "255eff9a-b6f0-4e30-9112-6420d6f76d98")
-	)
-	(text "DC Power Multiplexer"
-		(exclude_from_sim no)
-		(at 163.83 95.25 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "2e6036dc-6142-4c17-867e-825a9caed7e8")
-	)
-	(text "DC/Solar 6V LDO"
-		(exclude_from_sim no)
-		(at 36.83 83.82 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "814f060f-e891-4575-b2ba-f29c7ab70afb")
-	)
-	(text "DC/Solar Connector"
-		(exclude_from_sim no)
-		(at 36.83 24.13 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "b017c107-2985-455b-8c17-bf5f0a428294")
 	)
 	(label "6V_SOLAR"
 		(at 180.34 110.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5786,7 +5897,6 @@
 	)
 	(label "6V_SOLAR"
 		(at 120.65 99.06 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5797,7 +5907,6 @@
 	)
 	(label "SOLAR_IN"
 		(at 120.65 40.64 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5808,7 +5917,6 @@
 	)
 	(label "SOLAR_IN"
 		(at 50.8 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5820,7 +5928,6 @@
 	(hierarchical_label "V_USB"
 		(shape input)
 		(at 180.34 113.03 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5832,7 +5939,6 @@
 	(hierarchical_label "V_USB_OR_SOLAR"
 		(shape output)
 		(at 232.41 110.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5844,7 +5950,6 @@
 	(hierarchical_label "V_USB"
 		(shape output)
 		(at 245.11 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
