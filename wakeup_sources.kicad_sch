@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "d6324a3c-397d-4870-b9f8-741d2c97b956")
 	(paper "A4")
 	(title_block
@@ -12,9 +12,13 @@
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -84,10 +88,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -96,10 +100,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -145,11 +149,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:Crystal"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -215,17 +224,6 @@
 				)
 			)
 			(symbol "Crystal_0_1"
-				(rectangle
-					(start -1.143 2.54)
-					(end 1.143 -2.54)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -2.54 0) (xy -1.905 0)
@@ -244,6 +242,17 @@
 					)
 					(stroke
 						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.143 2.54)
+					(end 1.143 -2.54)
+					(stroke
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -313,11 +322,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Switch:SW_Push"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -398,10 +412,9 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -410,9 +423,10 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -458,6 +472,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Timer_RTC:MCP7940N-xMNY"
 			(exclude_from_sim no)
@@ -539,70 +554,16 @@
 			)
 			(symbol "MCP7940N-xMNY_1_1"
 				(pin input line
-					(at 10.16 2.54 180)
+					(at -10.16 5.08 0)
 					(length 2.54)
-					(name "X1"
+					(name "SCL"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "X2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 10.16 270)
-					(length 2.54)
-					(name "VBAT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -621,24 +582,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -683,6 +626,42 @@
 					)
 				)
 				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 10.16 270)
+					(length 2.54)
+					(name "VBAT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
 					(at 2.54 -10.16 90)
 					(length 2.54)
 					(name "EP"
@@ -700,7 +679,44 @@
 						)
 					)
 				)
+				(pin input line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "X1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "X2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "gworkman_sensors:DRV5032xxLPG"
 			(exclude_from_sim no)
@@ -834,12 +850,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -930,7 +951,126 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 220.98 59.69)
+		(end 242.57 106.68)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 268625f0-b00f-4fd9-b8b2-eaef902b36d6)
+	)
+	(rectangle
+		(start 110.49 59.69)
+		(end 210.82 106.68)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 6c2416c5-7ba6-4c6f-b353-18713d87bcb0)
+	)
+	(rectangle
+		(start 48.26 59.69)
+		(end 100.33 106.68)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ad7a08a4-5756-46eb-997f-e12cefcb193f)
+	)
+	(text "Hall Switch"
+		(exclude_from_sim no)
+		(at 48.26 57.15 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "7d841592-7335-4b21-8f85-1a95cee1593f")
+	)
+	(text "Pushbutton"
+		(exclude_from_sim no)
+		(at 220.98 57.15 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "c99620bd-f70d-49c7-a756-2027c0d573e9")
+	)
+	(text "Real Time Clock"
+		(exclude_from_sim no)
+		(at 110.49 57.15 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "d6607e18-644e-447e-b524-a171409e27db")
+	)
+	(text_box "Design Notes\n\n- Open drain output\n- 20 Hz refresh rate\n- Iq is 1.3uA"
+		(exclude_from_sim no)
+		(at 48.26 109.22 0)
+		(size 52.07 12.7)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "2fbcefd4-9c89-4685-9938-fb4f54db9b3c")
+	)
+	(text_box "Design Notes:\n\n- I2C address is 0x6F\n- Iq is 0.925uA on battery backup\n- Open drain alarm output on MFP is enabled in battery backup mode"
+		(exclude_from_sim no)
+		(at 110.49 109.22 0)
+		(size 100.33 12.7)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left top)
+		)
+		(uuid "4e60d5bd-56a0-4b02-b564-885aea7f968b")
 	)
 	(junction
 		(at 162.56 95.25)
@@ -1300,126 +1440,9 @@
 		)
 		(uuid "fae5c6ea-9418-4ecd-a5f0-7be3eedf1973")
 	)
-	(rectangle
-		(start 220.98 59.69)
-		(end 242.57 106.68)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 268625f0-b00f-4fd9-b8b2-eaef902b36d6)
-	)
-	(rectangle
-		(start 110.49 59.69)
-		(end 210.82 106.68)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 6c2416c5-7ba6-4c6f-b353-18713d87bcb0)
-	)
-	(rectangle
-		(start 48.26 59.69)
-		(end 100.33 106.68)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid ad7a08a4-5756-46eb-997f-e12cefcb193f)
-	)
-	(text_box "Design Notes\n\n- Open drain output\n- 20 Hz refresh rate\n- Iq is 1.3uA"
-		(exclude_from_sim no)
-		(at 48.26 109.22 0)
-		(size 52.07 12.7)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type color)
-			(color 255 255 194 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "2fbcefd4-9c89-4685-9938-fb4f54db9b3c")
-	)
-	(text_box "Design Notes:\n\n- I2C address is 0x6F\n- Iq is 0.925uA on battery backup\n- Open drain alarm output on MFP is enabled in battery backup mode"
-		(exclude_from_sim no)
-		(at 110.49 109.22 0)
-		(size 100.33 12.7)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type color)
-			(color 255 255 194 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left top)
-		)
-		(uuid "4e60d5bd-56a0-4b02-b564-885aea7f968b")
-	)
-	(text "Hall Switch"
-		(exclude_from_sim no)
-		(at 48.26 57.15 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "7d841592-7335-4b21-8f85-1a95cee1593f")
-	)
-	(text "Pushbutton"
-		(exclude_from_sim no)
-		(at 220.98 57.15 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "c99620bd-f70d-49c7-a756-2027c0d573e9")
-	)
-	(text "Real Time Clock"
-		(exclude_from_sim no)
-		(at 110.49 57.15 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "d6607e18-644e-447e-b524-a171409e27db")
-	)
 	(hierarchical_label "3V3"
 		(shape input)
 		(at 128.27 78.74 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1431,7 +1454,6 @@
 	(hierarchical_label "BATT"
 		(shape input)
 		(at 121.92 78.74 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1443,7 +1465,6 @@
 	(hierarchical_label "I2C_SCL"
 		(shape bidirectional)
 		(at 148.59 78.74 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1456,7 +1477,6 @@
 	(hierarchical_label "V_SYS"
 		(shape input)
 		(at 62.23 80.01 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1468,7 +1488,6 @@
 	(hierarchical_label "BATT"
 		(shape input)
 		(at 163.83 71.12 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1480,7 +1499,6 @@
 	(hierarchical_label "~{WAKE_UP}"
 		(shape output)
 		(at 233.68 76.2 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1493,7 +1511,6 @@
 	(hierarchical_label "3V3"
 		(shape input)
 		(at 157.48 71.12 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1505,7 +1522,6 @@
 	(hierarchical_label "V_SYS"
 		(shape input)
 		(at 71.12 72.39 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1517,7 +1533,6 @@
 	(hierarchical_label "I2C_SDA"
 		(shape bidirectional)
 		(at 148.59 81.28 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1530,7 +1545,6 @@
 	(hierarchical_label "~{WAKE_UP}"
 		(shape output)
 		(at 148.59 86.36 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1543,7 +1557,6 @@
 	(hierarchical_label "~{WAKE_UP}"
 		(shape output)
 		(at 85.09 83.82 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
