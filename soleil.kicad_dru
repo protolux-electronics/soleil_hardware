@@ -27,13 +27,3 @@
 
 (rule "Disallow micro via"
    (constraint disallow micro_via))
-
-#----------------------------------------------------------------------------------------------------
-# The Soldermask is pulled back by a bit to account for slight missalignment during manufacturing. 
-# We do this on our own, please keep the soldermask margin set to 0. 
- 
-(rule "Disallow solder mask margin overrides"
-    (constraint assertion "A.Soldermask_Margin_Override == 0mm")
-    (condition "A.Type == 'Pad'"))
-
-#----------------------------------------------------------------------------------------------------
