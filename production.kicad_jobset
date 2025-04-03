@@ -82,7 +82,9 @@
           "B.SilkS",
           "F.Mask",
           "B.Mask",
-          "Edge.Cuts"
+          "Edge.Cuts",
+          "F.Fab",
+          "B.Fab"
         ],
         "layers_include_on_all": [],
         "layers_include_on_all_set": false,
@@ -176,7 +178,8 @@
         "fields_group_by": [
           "Value",
           "Footprint",
-          "${DNP}"
+          "${DNP}",
+          "MPN"
         ],
         "fields_labels": [
           "Reference",
